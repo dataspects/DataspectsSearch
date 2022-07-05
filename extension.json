@@ -42,6 +42,14 @@
         "./instantsearch.js@4"
       ],
       "messages": []
+    },
+    "ext.dataspectsSearchBackstage": {
+      "localBasePath": "resources/ext.dataspectsSearchBackstage",
+      "remoteExtPath": "DataspectsSearch/resources/ext.dataspectsSearchBackstage",
+      "dependencies": [],
+      "styles": [],
+      "packageFiles": ["./meilisearch.umd.min.js"],
+      "messages": []
     }
   },
   "JobClasses": {

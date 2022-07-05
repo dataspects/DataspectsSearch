@@ -9,21 +9,14 @@ class SpecialDataspectsSearchBackstage extends SpecialPage {
 		$request = $this->getRequest();
 		$output = $this->getOutput();
 		$this->setHeaders();
-		$output->addHTML( '<table class="dataspectsSearchInterface">
+		$output->addHTML( '<table class="dataspectsSearchBackstage">
 			<tr>
 				<td colspan=2>
-					<div id="searchbox"></div>
-					<a href="https://localhost/wiki/Special:DataspectsSearch">Reset</a>
-				</td>
-			</tr>
-			<tr>
-				<td><div id="hits"></div></td>
-				<td>
-					<div id="sources-hierarchical-menu"></div>
-					<div id="topic-types-hierarchical-menu"></div>
+					Hello
 				</td>
 			</tr>
 		</table>' );
-		$output->addModules( 'ext.dataspectsSearch' );
+        $output->addJsConfigVars(array('wgDataspectsSearchMasterKey' => $GLOBALS['wgDataspectsSearchMasterKey']));
+		$output->addModules( 'ext.dataspectsSearchBackstage' );
 	}
 }

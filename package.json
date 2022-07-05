@@ -16,6 +16,7 @@
     "vendor/**"
   ],
   "dependencies": {
-    "@meilisearch/instant-meilisearch": "^0.7.1"
+    "@meilisearch/instant-meilisearch": "^0.7.1",
+    "meilisearch": "^0.26.0"
   }
 }

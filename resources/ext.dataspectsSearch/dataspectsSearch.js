@@ -85,11 +85,12 @@ const annotations = (hit, instantsearch) => {
 $(function () {
   require("./instant-meilisearch.umd.min.js");
   require("./instantsearch.js@4");
+  console.debug(window.location.host);
   const search = instantsearch({
     indexName: "mediawiki",
     // FIXME: How to get these from $GLOBALS?
     searchClient: instantMeiliSearch(
-      "http://localhost:7700",
+      "http://" + window.location.host + ":7700",
       mw.config.get("wgDataspectsSearchKey")
     ),
     searchFunction(helper) {
